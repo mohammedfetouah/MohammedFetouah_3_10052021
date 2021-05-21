@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="sass/style/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    <title>Document</title>
+
 </head>
 <body>
 </body>
@@ -22,7 +25,7 @@
     <header>
         <nav class="nav">              
             <div class="logo-ohmyfood">
-                <img class="logo-ohmyfood-img" src="logo/Ohmyfood.svg" alt="logo Ohmyfood">
+                <img class="logo-ohmyfood-img" src="../img/logo/ohmyfood.png" alt="logo Ohmyfood">
             </div>
             <div class="recherche">
                 <form action="#" method="GET">
@@ -40,6 +43,85 @@
                 </form>
             </div>
         </nav>
+        <nav class="nav-bar">
+            <h2>Fonctionnement</h2>
+            <ul>
+                <li><span><i class="fas fa-mobile-alt"></i></span> Choisissez un restaurant</li>
+                <li><span><i class="fas fa-list-ul"></i></span> Composez votre menu</li>
+                <li><span></span> Dégustez au restaurant</li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section class="les-restaurants">
+            <div class="restaurants-tittle">
+                <h2>Restaurants</h2>
+            </div>        
+            <div class="restaurants">
+                <a href="#" class="restaurant">
+                    <div class="restaurant-images">
+                        <img class="restaurant-image"
+                        src="../img/restaurants/laPaletteDugout.jpg" alt="la palette du goût">
+                    </div>
+                    <div class="restaurant-description">
+                        <div>
+                            <span class="restaurant-name">la palette du goût</span>
+                        </div>
+                        <div>
+                            <span class="restaurant-city">Ménilmontant</span>
+                        </div>                       
+                    </div>
+                </a>
+            </div>
+            <div class="restaurants">
+                <a href="#" class="restaurant">
+                    <div class="restaurant-images">
+                        <img class="restaurant-image"
+                        src="../img/restaurants/laNoteEnchantee.jpg" alt="la note enchantée">
+                    </div>
+                    <div class="restaurant-description">
+                        <div>
+                            <span class="restaurant-name">la note enchantée</span>
+                        </div>
+                        <div>
+                            <span class="restaurant-city">Charonne</span>
+                        </div>                       
+                    </div>
+                </a>
+            </div>
+            <div class="restaurants">
+                <a href="#" class="restaurant">
+                    <div class="restaurant-images">
+                        <img class="restaurant-image"
+                        src="../img/restaurants/aLaFrançaise.jpg" alt="À la française">
+                    </div>
+                    <div class="restaurant-description">
+                        <div>
+                            <span class="restaurant-name">À la française</span>
+                        </div>
+                        <div>
+                            <span class="restaurant-city">Cité Rouge</span>
+                        </div>                       
+                    </div>
+                </a>
+            </div>
+            <div class="restaurants">
+                <a href="#" class="restaurant">
+                    <div class="restaurant-images">
+                        <img class="restaurant-image"
+                        src="../img/restaurants/leDéliceDesSens.jpg" alt="Le délice des sens">
+                    </div>
+                    <div class="restaurant-description">
+                        <div>
+                            <span class="restaurant-name">Le délice des sens</span>
+                        </div>
+                        <div>
+                            <span class="restaurant-city">Folie-Mericourt</span>
+                        </div>                       
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
