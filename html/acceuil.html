@@ -1,26 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sass/style/style.css">
-    <link rel="stylesheet" href="../sass/style/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    
-    <title>Document</title>
-
-</head>
-<body>
-</body>
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/style/style.css">
-    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="../sass/style/style.css">
+    <link rel="stylesheet" href="../sass/style/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Document</title>
 </head>
 <body>
     <header>                   
@@ -28,7 +15,7 @@
             <img class="logo-ohmyfood-img" src="../img/logo/ohmyfood.png" alt="logo Ohmyfood">
         </div>
     </header>
-    <nav class="nav">
+    <div class="recherches">
         <div class="recherche">
             <form action="#" method="GET">
                 <div class="recherche-position">
@@ -44,23 +31,22 @@
                 </button>
             </form>
         </div>
-    </nav>
-    <nav class="nav-bar">
+    </div>
+    <nav class="nav">
         <h2>Fonctionnement</h2>
-        <ul>
-            <li><span><i class="fas fa-mobile-alt"></i></span> Choisissez un restaurant</li>
-            <li><span><i class="fas fa-list-ul"></i></span> Composez votre menu</li>
-            <li><span></span> Dégustez au restaurant</li>
+        <ul class="nav-bar">
+            <li><span class="nav-bar-icon"><i class="fas fa-mobile-alt"></i></span> Choisissez un restaurant</li>
+            <li><span class="nav-bar-icon"><i class="fas fa-list-ul"></i></span> Composez votre menu</li>
+            <li><span class="nav-bar-icon"></span> Dégustez au restaurant</li>
         </ul>
     </nav>
-
     <main>
         <section class="les-restaurants">
             <div class="restaurants-tittle">
                 <h2>Restaurants</h2>
             </div>        
             <div class="restaurants">
-                <a href="#" class="restaurant">
+                <a href="../html/laPaletteDuGout.html" class="restaurant">
                     <div class="restaurant-images">
                         <img class="restaurant-image"
                         src="../img/restaurants/laPaletteDugout.jpg" alt="la palette du goût">
@@ -76,7 +62,7 @@
                 </a>
             </div>
             <div class="restaurants">
-                <a href="#" class="restaurant">
+                <a href="../html/laNoteEnchantee.html" class="restaurant">
                     <div class="restaurant-images">
                         <img class="restaurant-image"
                         src="../img/restaurants/laNoteEnchantee.jpg" alt="la note enchantée">
@@ -92,7 +78,7 @@
                 </a>
             </div>
             <div class="restaurants">
-                <a href="#" class="restaurant">
+                <a href="../html/aLaFrançaise.html" class="restaurant">
                     <div class="restaurant-images">
                         <img class="restaurant-image"
                         src="../img/restaurants/aLaFrançaise.jpg" alt="À la française">
@@ -108,7 +94,7 @@
                 </a>
             </div>
             <div class="restaurants">
-                <a href="#" class="restaurant">
+                <a href="../html/leDeliceDesSens.html" class="restaurant">
                     <div class="restaurant-images">
                         <img class="restaurant-image"
                         src="../img/restaurants/leDéliceDesSens.jpg" alt="Le délice des sens">
@@ -133,10 +119,10 @@
                 </div>
                 <div class="colonnes">
                     <div class="colonne">
-                        <a href="#">Proposer un restaurant</a>
+                        <a href="#"><span class="colonne-icon"><i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
                     </div>
                     <div class="colonne">
-                        <a href="#">Devenir partenaire</a>
+                        <a href="#"><span class="colonne-icon"><i class="fas fa-hands-helping"></i></span> Devenir partenaire</a>
                     </div>
                     <div class="colonne">
                         <a href="#">Mentions légales</a>                       
