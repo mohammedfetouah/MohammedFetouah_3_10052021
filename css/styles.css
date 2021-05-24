@@ -47,18 +47,96 @@ table {
   border-spacing: 0;
 }
 
-.logo-ohmyfoods {
-  width: 50%;
-  margin: 25px auto 20px auto;
+.title-ohmyfoods {
+  text-align: center;
+  margin: 25px 0 20px 0;
+  font-size: 35px;
+  font-family: "Shrikhand";
 }
-.logo-ohmyfoods img.logo-ohmyfood-img {
-  width: 100%;
+
+h2 {
+  font-size: 26px;
+  font-family: "roboto";
 }
 
 .recherche-position {
   background: #eaeaea;
-  margin: 0 auto;
   text-align: center;
+  padding: 20px 0 20px 0;
+  box-shadow: inset 0px 4px 3px -1px #cfcfcf;
+}
+.recherche-position .span-icon {
+  color: #353535;
+  font-size: 20px;
+}
+.recherche-position input#name {
+  color: #353535;
+  background: #eaeaea;
+  border: #eaeaea;
+  font-size: 18px;
+  padding: 0 0 0 10px;
+  width: 40%;
+  outline-style: none;
+  font-family: "Roboto";
+}
+
+.recherche-block {
+  background: #f6f6f6;
+  padding: 50px 45px 60px 45px;
+}
+.recherche-block h2 {
+  text-align: center;
+}
+.recherche-block .recherche-info {
+  padding-top: 20px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+.recherche-block .recherches-button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 35px;
+  padding: 0px;
+  border: none;
+  border-radius: 30px;
+}
+.recherche-block .recherches-button span {
+  font-family: "roboto";
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+  display: block;
+  background: linear-gradient(#FF79DA, #9356DC);
+  outline-style: none;
+  border-radius: 30px;
+  color: #ffff;
+}
+
+.nav {
+  margin: 50px 15px 60px 15px;
+}
+.nav ul {
+  margin-top: 35px;
+}
+.nav ul li {
+  position: relative;
+  margin-top: 25px;
+  font-family: "Roboto";
+  font-weight: 400;
+  background: #f6f6f6;
+  padding: 30px 0 30px 0;
+  border-radius: 25px;
+  box-shadow: 3px 2px 10px #e5e5e5;
+  text-align: center;
+}
+.nav ul li:hover {
+  background: #f5edff;
+}
+.nav ul li .nav-bar-icon {
+  position: absolute;
+  left: 40px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
