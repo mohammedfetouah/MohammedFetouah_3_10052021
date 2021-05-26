@@ -54,9 +54,12 @@ table {
   font-family: "Shrikhand";
 }
 
+body {
+  font-family: "roboto";
+}
+
 h2 {
   font-size: 26px;
-  font-family: "roboto";
 }
 
 .recherche-position {
@@ -116,27 +119,77 @@ h2 {
 .nav {
   margin: 50px 15px 60px 15px;
 }
-.nav ul {
+.nav .nav-bar {
   margin-top: 35px;
-}
-.nav ul li {
   position: relative;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  display: block;
+  padding: 25px 0 25px 0;
+  position: relative;
+}
+.nav-bar a .nav-bar-list-lien {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-bar a .nav-bar-list-lien .nav-bar-list-icon {
+  font-size: 23px;
+  margin-top: 5px;
+  color: #7e7e7e;
+  margin-left: -10px;
+}
+.nav-bar a .nav-bar-list-lien span.nav-bar-list-title {
+  margin-top: 8px;
+  color: #000000;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.nav-bar a:after {
+  font-size: 20px;
+  content: attr(data-count);
+  background: #9356DC;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  left: -10px;
+  display: block;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  top: 50%;
+  margin-top: -15px;
+}
+.nav-bar a:hover .nav-bar-list-lien .nav-bar-list-icon {
+  color: #9356DC;
+}
+
+.nav-bar-list {
   margin-top: 25px;
-  font-family: "Roboto";
   font-weight: 400;
   background: #f6f6f6;
-  padding: 30px 0 30px 0;
   border-radius: 25px;
   box-shadow: 3px 2px 10px #e5e5e5;
-  text-align: center;
 }
-.nav ul li:hover {
+.nav-bar-list:hover {
   background: #f5edff;
 }
-.nav ul li .nav-bar-icon {
-  position: absolute;
-  left: 40px;
-  font-size: 20px;
+
+.restaurant {
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  margin-top: 25px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 0px #e9e9e9;
+  text-decoration: none;
+  min-height: 135px;
 }
 
 /*# sourceMappingURL=styles.css.map */
