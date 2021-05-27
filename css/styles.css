@@ -47,7 +47,7 @@ table {
   border-spacing: 0;
 }
 
-.title-ohmyfoods {
+.title-ohmyfoods-xl {
   text-align: center;
   margin: 25px 0 20px 0;
   font-size: 35px;
@@ -65,6 +65,34 @@ h2 {
 
 i {
   font-size: 23px;
+}
+
+footer.footer-colonnes {
+  padding: 30px 20px 40px 20px;
+  background: #353535;
+  color: #fff;
+}
+footer.footer-colonnes .title-ohmyfoods-s {
+  font-size: 17px;
+  font-family: "Shrikhand";
+}
+footer.footer-colonnes a {
+  color: #fff;
+  text-decoration: none;
+}
+footer.footer-colonnes a span.colonne-icon {
+  display: inline-block;
+  width: 15px;
+  text-align: center;
+}
+footer.footer-colonnes a span.colonne-icon i {
+  font-size: 12px;
+}
+footer.footer-colonnes .colonnes {
+  padding-top: 10px;
+}
+footer.footer-colonnes .colonnes .colonne {
+  padding-top: 15px;
 }
 
 .recherche-position {
@@ -122,7 +150,7 @@ i {
 }
 
 .nav {
-  margin: 60px 15px 60px 15px;
+  margin: 60px 20px 60px 20px;
 }
 .nav .nav-bar {
   margin-top: 35px;
@@ -188,7 +216,7 @@ i {
 
 section.les-restaurants {
   background: #f6f6f6;
-  padding: 60px 15px 60px 15px;
+  padding: 60px 20px 60px 20px;
 }
 section.les-restaurants h2 {
   margin-top: 0;
@@ -260,6 +288,10 @@ section.les-restaurants h2 {
   font-weight: 300;
   font-size: 18px;
   margin-top: 15px;
+}
+
+h1 {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=styles.css.map */

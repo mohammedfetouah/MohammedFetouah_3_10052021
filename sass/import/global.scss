@@ -1,4 +1,4 @@
-.title-ohmyfoods {
+.title-ohmyfoods-xl {
     text-align: center;
     margin: 25px 0 20px 0;
     font-size: 35px;
@@ -14,3 +14,31 @@ h2 {
 i {
     font-size: 23px;
 }
+footer.footer-colonnes {
+    padding: 30px 20px 40px 20px;
+    background: #353535;
+    color: #fff;
+    .title-ohmyfoods-s {
+        font-size: 17px;
+        font-family: 'Shrikhand';
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        span.colonne-icon {
+            display: inline-block;
+            width: 15px;
+            text-align: center;
+        }
+        span.colonne-icon i {
+            font-size: 12px;
+        }
+    }
+    .colonnes {
+        padding-top: 10px;
+        .colonne {
+            padding-top: 15px;
+        }
+    }
+}
+
