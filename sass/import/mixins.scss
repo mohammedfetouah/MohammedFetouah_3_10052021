@@ -1,0 +1,22 @@
+@mixin like-gradient {
+    font-weight: 900;
+    background: linear-gradient($secondaire, $primaire);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;  
+}
+@mixin button-gradient {
+    font-family: "roboto";
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    display: block;
+    background: linear-gradient($secondaire, $primaire);
+    outline-style: none;
+    border-radius: 30px;
+    color: #ffff;
+}
+@mixin box-shadow {
+    box-shadow: 3px 2px 10px #e5e5e5;  
+}

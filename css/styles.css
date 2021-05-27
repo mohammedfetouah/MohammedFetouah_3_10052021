@@ -47,9 +47,7 @@ table {
   border-spacing: 0;
 }
 
-.title-ohmyfoods-xl {
-  text-align: center;
-  margin: 25px 0 20px 0;
+h1 {
   font-size: 35px;
   font-family: "Shrikhand";
 }
@@ -65,6 +63,31 @@ h2 {
 
 i {
   font-size: 23px;
+}
+
+header {
+  position: relative;
+}
+header .retour {
+  position: absolute;
+  left: 35px;
+  top: 26px;
+}
+header .retour a {
+  color: #000;
+}
+header .retour a i {
+  font-size: 21px;
+}
+header .logo-ohmyfoods {
+  display: block;
+  padding-top: 25px;
+  margin: 0px auto 20px auto;
+  width: 45%;
+}
+
+.img-fond {
+  width: 100%;
 }
 
 footer.footer-colonnes {
@@ -250,7 +273,6 @@ section.les-restaurants h2 {
 .restaurants .restaurant-likes:hover .far {
   font-weight: 900;
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-text-fill-color: transparent;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -290,8 +312,9 @@ section.les-restaurants h2 {
   margin-top: 15px;
 }
 
-h1 {
-  color: #9356DC;
+main .menu {
+  padding: 45px 20px 60px 20px;
+  background: rebeccapurple;
 }
 
 /*# sourceMappingURL=styles.css.map */

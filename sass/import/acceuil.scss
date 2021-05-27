@@ -1,7 +1,5 @@
 
 
-
-
 .recherche-position {
     background: #eaeaea;
     text-align: center;
@@ -44,14 +42,7 @@
         border: none;
         border-radius: 30px;
         span {
-            font-family: "roboto";
-            padding: 20px 20px 20px 20px;
-            font-size: 18px;
-            display: block;
-            background: linear-gradient($secondaire, $primaire);
-            outline-style: none;
-            border-radius: 30px;
-            color: #ffff;
+            @include button-gradient;
         }
     }
 }
@@ -113,7 +104,7 @@
     font-weight: 400;
     background: #f6f6f6;
     border-radius: 25px;
-    box-shadow: 3px 2px 10px #e5e5e5;
+    @include box-shadow;
     &:hover {
         background: #f5edff;
     }
@@ -150,14 +141,7 @@ section.les-restaurants {
         }
         &:hover {
             .far {
-                font-weight: 900;
-                background: linear-gradient($secondaire, $primaire);
-                -webkit-text-fill-color: transparent;
-                background-size: 100%;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                -webkit-text-fill-color: transparent; 
-                -moz-text-fill-color: transparent;
+                @include like-gradient;
             }
         }
     }
