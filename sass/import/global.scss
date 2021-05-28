@@ -1,14 +1,19 @@
-
-h1 {
-    font-size: 35px;
-    font-family: 'Shrikhand';
-}
 body {
     font-family: "roboto";
 }
+h1 {
+    font-size: 28px;
+    font-weight: 100;
+    font-family: "Shrikhand";
+}
 h2 {
     font-size: 26px;
-    margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 18px;
 }
 i {
     font-size: 23px;
@@ -37,13 +42,16 @@ header {
 .img-fond {
     width: 100%;
 }
+
 footer.footer-colonnes {
     padding: 30px 20px 40px 20px;
     background: #353535;
     color: #fff;
     .title-ohmyfoods-s {
-        font-size: 17px;
-        font-family: 'Shrikhand';
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(107%) contrast(101%);
+        .footer-svg-logo {
+            width: 30%;
+        }
     }
     a {
         color: #fff;

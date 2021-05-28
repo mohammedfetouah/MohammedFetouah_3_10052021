@@ -1,4 +1,34 @@
-main .menu {
-    padding: 45px 20px 60px 20px;
-    background: rebeccapurple;
+
+.img-fonds {
+    margin-bottom: -50px;
 }
+.les-menu {
+    padding: 45px 20px 60px 20px;
+    background: #f6f6f6;
+    overflow: overlay;
+    border-radius: 50px;
+    .les-menu-title {
+        position: relative;
+        span {
+            position: absolute;
+            top: 1px;
+            right: 19px;
+            i {
+                font-size: 26px;
+            }
+        }
+    }
+}
+.entrees {
+    button.entrees-discriptions {
+        @include button;
+        @include box-shadow;
+        p.entree-description {
+            font-size: 15px;
+        }
+    }
+}
+
+
+
+
