@@ -25,6 +25,7 @@
     
     h2 {
         text-align: center;
+        font-weight: 500;
         margin-top: 0;
     }
     .recherche-info {
@@ -48,6 +49,9 @@
 }
 .nav {
     margin: 60px 20px 60px 20px;
+    h2 {
+        font-weight: 500;
+    }
     .nav-bar {
         margin-top: 35px;     
         position: relative;
@@ -114,6 +118,7 @@ section.les-restaurants {
     padding: 60px 20px 60px 20px;
     h2 {
         margin-top: 0;
+        font-weight: 500;
     }
 }
 .restaurants {

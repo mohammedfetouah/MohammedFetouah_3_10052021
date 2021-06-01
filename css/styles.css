@@ -1,3 +1,13 @@
+@keyframes apparition {
+  0% {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,7 +70,7 @@ h1 {
 h2 {
   font-size: 26px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 40px;
 }
 
@@ -153,6 +163,7 @@ footer.footer-colonnes .colonnes .colonne {
 }
 .recherche-block h2 {
   text-align: center;
+  font-weight: 500;
   margin-top: 0;
 }
 .recherche-block .recherche-info {
@@ -171,7 +182,6 @@ footer.footer-colonnes .colonnes .colonne {
   border-radius: 30px;
 }
 .recherche-block .recherches-button span {
-  font-family: "roboto";
   padding: 20px 20px 20px 20px;
   font-size: 18px;
   display: block;
@@ -183,6 +193,9 @@ footer.footer-colonnes .colonnes .colonne {
 
 .nav {
   margin: 60px 20px 60px 20px;
+}
+.nav h2 {
+  font-weight: 500;
 }
 .nav .nav-bar {
   margin-top: 35px;
@@ -252,6 +265,7 @@ section.les-restaurants {
 }
 section.les-restaurants h2 {
   margin-top: 0;
+  font-weight: 500;
 }
 
 .restaurants {
@@ -329,35 +343,107 @@ section.les-restaurants h2 {
   padding: 45px 20px 60px 20px;
   background: #f6f6f6;
   overflow: overlay;
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
 }
 .les-menu .les-menu-title {
   position: relative;
 }
-.les-menu .les-menu-title span {
+.les-menu .les-menu-title .les-menu-likes {
   position: absolute;
   top: 1px;
-  right: 19px;
+  right: 0px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  width: 30px;
 }
-.les-menu .les-menu-title span i {
+.les-menu .les-menu-title .les-menu-likes i {
+  display: block;
+  width: 30px;
   font-size: 26px;
 }
+.les-menu .les-menu-title .les-menu-likes i:hover {
+  font-weight: 900;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
 
-.entrees button.entrees-discriptions {
+.les-entrees-title .border-solid {
+  border-top: 3px solid #99E2D0;
+  width: 64px;
+  margin: 10px 0 0 0;
+}
+
+.entrees .button-entrees-discriptions {
   margin-top: 15px;
   width: 100%;
   border-radius: 20px;
   border: none;
   justify-content: space-between;
   display: flex;
-  padding: 10px;
+  padding: 15px;
   outline: none;
   background: #ffffff;
   box-shadow: 3px 2px 10px #e5e5e5;
   box-shadow: 3px 2px 10px #e5e5e5;
 }
-.entrees button.entrees-discriptions p.entree-description {
+.entrees .button-entrees-discriptions .entrees-discriptions {
+  width: 100%;
+  text-align: initial;
+}
+.entrees .button-entrees-discriptions .entree-descriptions {
+  display: flex;
+  justify-content: space-between;
+}
+.entrees .button-entrees-discriptions .entree-descriptions p.entree-description {
+  font-size: 13px;
+  margin-top: 15px;
+}
+.entrees .button-entrees-discriptions .entree-descriptions .entree-prix {
   font-size: 15px;
+  font-weight: 600;
+  margin: 12px 10px 0 0;
+}
+.entrees .button-entrees-discriptions .entree-check-circle {
+  display: none;
+}
+
+.ApparitionProgressive1 {
+  opacity: 0;
+  animation: apparition 0.4s ease-in-out 0.1s forwards;
+}
+
+.ApparitionProgressive2 {
+  opacity: 0;
+  animation: apparition 0.4s ease-in-out 0.3s forwards;
+}
+
+.ApparitionProgressive3 {
+  opacity: 0;
+  animation: apparition 0.4s ease-in-out 0.5s forwards;
+}
+
+.commander {
+  text-align: center;
+  margin-top: 50px;
+}
+.commander .commander-button {
+  border: none;
+  background-color: #f6f6f6;
+}
+.commander .commander-button span {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+  display: block;
+  background: linear-gradient(#FF79DA, #9356DC);
+  outline-style: none;
+  border-radius: 30px;
+  color: #ffff;
+  padding: 20px 50px 20px 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
