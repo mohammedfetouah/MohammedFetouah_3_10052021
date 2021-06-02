@@ -28,12 +28,23 @@
     @include border-bottom;
 }
 .entrees {
-    .button-entrees-discriptions {  
+    .button-entrees-descriptions {  
         @include button;
         @include box-shadow;  
-        .entrees-discriptions {
+        overflow: hidden;
+        padding: 0;
+        display: flex;
+        align-items: stretch;
+        h3 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .entrees-descriptions {
             width: 100%;
             text-align: initial;
+            padding: 5px 15px;
+            box-sizing: border-box;
         }
         .entree-descriptions {
             display: flex;
@@ -41,6 +52,9 @@
             p.entree-description {
                 font-size: 13px;
                 margin-top: 15px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
             .entree-prix {
                 font-size: 15px;
@@ -49,7 +63,23 @@
             }
         }
         .entree-check-circle {
-            display: none;
+            width: 70px;
+            margin-right: -70px;
+            overflow: hidden;
+            background: $tertiaire;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover {
+            .entrees-descriptions {
+                width: calc(100% - 70px);
+                transition: width 2s;
+            }
+            .entree-check-circle {
+                margin-right: 0;
+                transition: 2s;
+            }
         }
     }
 }

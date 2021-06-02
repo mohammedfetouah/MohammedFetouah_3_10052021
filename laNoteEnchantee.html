@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -17,131 +21,238 @@
             <img class="logo-ohmyfoods" src="img/logo/ohmyfood.png" alt="logo ohmyfoods">
         </div>
     </header>
-    <div class="img-fonds">
-        <img class="img-fond" src="img/restaurants/laNoteEnchantee.jpg" alt="la note enchantée">
-    </div>
     <main>
-        <section class="menu">
-            <div class="menu-title">
+        <div class="img-fonds">
+            <img class="img-fond" src="img/restaurants/laNoteEnchantee.jpg" alt="La note enchantée">
+        </div>
+        <section class="les-menu">
+            <div class="les-menu-title">
                 <h1>La note enchantée</h1>
-                <span><i class="far fa-heart"></i></span>
+                <span class="les-menu-likes">
+                    <i class="far fa-heart"></i>
+                </span>
             </div>
-            <div class="entrees">
-                <div class="entrees-title">
-                    <h2>Entrées</h2>
+            <div class="menu">
+                <div class="les-entrees">
+                    <div class="les-entrees-title">
+                        <h2>Entrées</h2>
+                        <div class="border-solid">                          
+                        </div>
+                    </div>
+                    <div class="entrees">
+                        <button class="button-entrees-descriptions ApparitionProgressive1">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Ravioles de foie gras 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Accompagnés de leur crème à la truffe
+                                    </p>
+                                    <span class="entree-prix">
+                                        25€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive2">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Caviar osciètre 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Sur blini à la farine de blé noir
+                                    </p>
+                                    <span class="entree-prix">
+                                        35€
+                                    </span>
+                                </div>
+                            </div>
+
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive3">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Homard et espuma de potiron
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Mariné aux zestes d'orange
+                                    </p>
+                                    <span class="entree-prix">
+                                        20€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive4">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Foie gras de canard cuit entier
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Confiture de figue et pain toasté
+                                    </p>
+                                    <span class="entree-prix">
+                                        40€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                    </div>
                 </div>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Ravioles de foie gras</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Accompagnées de leur crème à la truffe</td>
-                        <td class="entree-prix">25€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Caviar osciètre</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">sur blini à la farine de blé noir</td>
-                        <td class="entree-prix">35€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Homard et espuma de potiron</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Mariné aux zests d'orange</td>
-                        <td class="entree-prix">20€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Foie gras de canard cuit entier</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Confiture de figure et pain toasté</td>
-                        <td class="entree-prix">35€</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="entrees">
-                <div class="entrees-title">
-                    <h2>plats</h2>
+                <div class="les-entrees">
+                    <div class="les-entrees-title">
+                        <h2>plats</h2>
+                        <div class="border-solid">                          
+                        </div>
+                    </div>
+                    <div class="entrees">
+                        <button class="button-entrees-descriptions ApparitionProgressive1">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Noix de coquilles Saint-Jacques
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Sur lit de purée de céleri-rave
+                                    </p>
+                                    <span class="entree-prix">
+                                        40€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive2">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Langoustine poêlée
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Purée de patate douce
+                                    </p>
+                                    <span class="entree-prix">
+                                        35€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive3">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Mijoté de queue de boeuf 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Et riz sauvage aux zestes de citron
+                                    </p>
+                                    <span class="entree-prix">
+                                        44€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                    </div>
                 </div>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Noix de coquilles Saint-Jacques</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Sur lit de purée de céleri-rave</td>
-                        <td class="entree-prix">40€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Langoustine de poêlée</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Purée de patate douce</td>
-                        <td class="entree-prix">35€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Mijoté de queue de boeuf</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Et riz sauvage aux zests de citron</td>
-                        <td class="entree-prix">44€</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="entrees">
-                <div class="entrees-title">
-                    <h2>Desserts</h2>
+                <div class="les-entrees">
+                    <div class="les-entrees-title">
+                        <h2>Desserts</h2>
+                        <div class="border-solid">                          
+                        </div>
+                    </div>
+                    <div class="entrees">
+                        <button class="button-entrees-descriptions ApparitionProgressive1">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Macaron noisette et chocolat
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Glace au caramel brun et sel de Guérande
+                                    </p>
+                                    <span class="entree-prix">
+                                        18€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive2">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Baba au rhum revisité
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Avec son coulis de citron
+                                    </p>
+                                    <span class="entree-prix">
+                                        22€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive3">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Tarte au citron meringuée
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Déstructurée
+                                    </p>
+                                    <span class="entree-prix">
+                                        23€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                    </div>
                 </div>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Macaron noisette et chocolat</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">glace au caramel brun et sel Guérande</td>
-                        <td class="entree-prix">18€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Baba au rhum Révisité</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Avec son coulis de citron</td>
-                        <td class="entree-prix">22€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Tarte au citron meringuée</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Destructuée</td>
-                        <td class="entree-prix">23€</td>
-                    </tr>
-                </table>
             </div>
             <div class="commander">
-                <button class="Commande">
-                    <span>Commander</span>
+                <button type="submit" class="commander-button">
+                    <span>commander</span>                      
                 </button>
             </div>
         </section>
     </main>
     <footer class="footer-colonnes" >
         <div class="title-ohmyfoods-s">
-            <a href="#">
-                ohmyfoods
+            <a href="acceuil.html">
+                <img class="footer-svg-logo" src="img/logo/ohmyfood@2x.svg" alt="logo ohmyfoods" >
             </a>
         </div>
         <div class="colonnes">

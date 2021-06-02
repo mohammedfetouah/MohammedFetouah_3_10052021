@@ -189,6 +189,7 @@ footer.footer-colonnes .colonnes .colonne {
   outline-style: none;
   border-radius: 30px;
   color: #ffff;
+  cursor: pointer;
 }
 
 .nav {
@@ -378,38 +379,66 @@ section.les-restaurants h2 {
   margin: 10px 0 0 0;
 }
 
-.entrees .button-entrees-discriptions {
+.entrees .button-entrees-descriptions {
   margin-top: 15px;
   width: 100%;
   border-radius: 20px;
   border: none;
   justify-content: space-between;
   display: flex;
-  padding: 15px;
   outline: none;
   background: #ffffff;
+  cursor: pointer;
   box-shadow: 3px 2px 10px #e5e5e5;
   box-shadow: 3px 2px 10px #e5e5e5;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
 }
-.entrees .button-entrees-discriptions .entrees-discriptions {
+.entrees .button-entrees-descriptions h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.entrees .button-entrees-descriptions .entrees-descriptions {
   width: 100%;
   text-align: initial;
+  padding: 5px 15px;
+  box-sizing: border-box;
 }
-.entrees .button-entrees-discriptions .entree-descriptions {
+.entrees .button-entrees-descriptions .entree-descriptions {
   display: flex;
   justify-content: space-between;
 }
-.entrees .button-entrees-discriptions .entree-descriptions p.entree-description {
+.entrees .button-entrees-descriptions .entree-descriptions p.entree-description {
   font-size: 13px;
   margin-top: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.entrees .button-entrees-discriptions .entree-descriptions .entree-prix {
+.entrees .button-entrees-descriptions .entree-descriptions .entree-prix {
   font-size: 15px;
   font-weight: 600;
   margin: 12px 10px 0 0;
 }
-.entrees .button-entrees-discriptions .entree-check-circle {
-  display: none;
+.entrees .button-entrees-descriptions .entree-check-circle {
+  width: 70px;
+  margin-right: -70px;
+  overflow: hidden;
+  background: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.entrees .button-entrees-descriptions:hover .entrees-descriptions {
+  width: calc(100% - 70px);
+  transition: width 2s;
+}
+.entrees .button-entrees-descriptions:hover .entree-check-circle {
+  margin-right: 0;
+  transition: 2s;
 }
 
 .ApparitionProgressive1 {
@@ -443,6 +472,7 @@ section.les-restaurants h2 {
   outline-style: none;
   border-radius: 30px;
   color: #ffff;
+  cursor: pointer;
   padding: 20px 50px 20px 50px;
 }
 

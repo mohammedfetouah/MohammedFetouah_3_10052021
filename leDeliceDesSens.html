@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Document</title>
+    </head>
 <body>
     <header>
         <div class="retour">
@@ -17,122 +21,219 @@
             <img class="logo-ohmyfoods" src="img/logo/ohmyfood.png" alt="logo ohmyfoods">
         </div>
     </header>
-    <div class="img-fonds">
-        <img class="img-fond" src="../img/restaurants/leDéliceDesSens.jpg" alt="Le délice des sens">
-    </div>
     <main>
-        <section class="menu">
-            <div class="menu-title">
+        <div class="img-fonds">
+            <img class="img-fond" src="img/restaurants/leDéliceDesSens.jpg" alt="Le délice des sens">
+        </div>
+        <section class="les-menu">
+            <div class="les-menu-title">
                 <h1>Le délice des sens</h1>
-                <span><i class="far fa-heart"></i></span>
+                <span class="les-menu-likes">
+                    <i class="far fa-heart"></i>
+                </span>
             </div>
-            <div class="entrees">
-                <div class="entrees-title">
-                    <h2>Entrées</h2>
+            <div class="menu">
+                <div class="les-entrees">
+                    <div class="les-entrees-title">
+                        <h2>Entrées</h2>
+                        <div class="border-solid">                          
+                        </div>
+                    </div>
+                    <div class="entrees">
+                        <button class="button-entrees-descriptions ApparitionProgressive1">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Tartare de thon
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Assaisonné au yuzu
+                                    </p>
+                                    <span class="entree-prix">
+                                        25€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive2">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Bouchée de homard croustillant 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Et sa farandole de petits légumes
+                                    </p>
+                                    <span class="entree-prix">
+                                        35€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive3">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Velouté de cèpes 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Aux truffes
+                                    </p>
+                                    <span class="entree-prix">
+                                        20€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                    </div>
                 </div>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Tartare de thon</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Assaisonné au yuzu</td>
-                        <td class="entree-prix">25€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Bouchée de homard croustillant </td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Et sa farandole de petits légumes</td>
-                        <td class="entree-prix">35€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Velouté de cèpes</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Aux truffes</td>
-                        <td class="entree-prix">20€</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="entrees">
-                <div class="entrees-title">
-                    <h2>plats</h2>
+                <div class="les-entrees">
+                    <div class="les-entrees-title">
+                        <h2>plats</h2>
+                        <div class="border-solid">                          
+                        </div>
+                    </div>
+                    <div class="entrees">
+                        <button class="button-entrees-descriptions ApparitionProgressive1">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Poulet rôti aux herbes de Provence 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Et sa crème de truffe
+                                    </p>
+                                    <span class="entree-prix">
+                                        40€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive2">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Langouste rôtie 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Et ses légumes de saison
+                                    </p>
+                                    <span class="entree-prix">
+                                        35€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive3">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Côte de boeuf Angus
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Et sa purée de panais
+                                    </p>
+                                    <span class="entree-prix">
+                                        44€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                    </div>
                 </div>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Poulet rôti aux herbes de Provence </td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Et sa crème de truffe</td>
-                        <td class="entree-prix">40€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Langouste rôtie </td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Et ses légumes de saison</td>
-                        <td class="entree-prix">35€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Côte de boeuf Angus </td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Et sa purée de panais</td>
-                        <td class="entree-prix">44€</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="entrees">
-                <div class="entrees-title">
-                    <h2>Desserts</h2>
+                <div class="les-entrees">
+                    <div class="les-entrees-title">
+                        <h2>Desserts</h2>
+                        <div class="border-solid">                          
+                        </div>
+                    </div>
+                    <div class="entrees">
+                        <button class="button-entrees-descriptions ApparitionProgressive1">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Farandole de desserts
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Du chef
+                                    </p>
+                                    <span class="entree-prix">
+                                        18€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive2">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Crème brulée 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        Revisitée
+                                    </p>
+                                    <span class="entree-prix">
+                                        22€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                        <button class="button-entrees-descriptions ApparitionProgressive3">
+                            <div class="entrees-descriptions">
+                                <h3 class="entree-title">
+                                    Tiramisu 
+                                </h3>                  
+                                <div class="entree-descriptions">
+                                    <p class="entree-description">
+                                        À la noisette
+                                    </p>
+                                    <span class="entree-prix">
+                                        23€
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="entree-check-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>                   
+                        </button>
+                    </div>
                 </div>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Farandole de desserts</td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Du chef</td>
-                        <td class="entree-prix">18€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Crème brulée </td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">Revisitée</td>
-                        <td class="entree-prix">22€</td>
-                    </tr>
-                </table>
-                <table class="entree">
-                    <tr class="entree-title">
-                        <td>Tiramisu </td>
-                    </tr>
-                    <tr class="entree-descriptions">
-                        <td class="entree-description">À la noisette</td>
-                        <td class="entree-prix">23€</td>
-                    </tr>
-                </table>
             </div>
             <div class="commander">
-                <button class="Commande">
-                    <span>Commander</span>
+                <button type="submit" class="commander-button">
+                    <span>commander</span>                      
                 </button>
             </div>
         </section>
     </main>
     <footer class="footer-colonnes" >
         <div class="title-ohmyfoods-s">
-            <a href="#">
-                ohmyfoods
+            <a href="acceuil.html">
+                <img class="footer-svg-logo" src="img/logo/ohmyfood@2x.svg" alt="logo ohmyfoods" >
             </a>
         </div>
         <div class="colonnes">
@@ -143,8 +244,7 @@
                     </span>
                     <span class="colonne-lien">
                         Proposer un restaurant
-                    </span>
-                    
+                    </span>     
                 </a>
             </div>
             <div class="colonne">
