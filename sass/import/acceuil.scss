@@ -3,10 +3,12 @@
 .recherche-position {
     background: #eaeaea;
     text-align: center;
+    position: relative;
     padding: 20px 0 20px 0;
     box-shadow: inset 0px 4px 3px -1px #cfcfcf;
     .span-icon {
         color: #353535;
+        position: absolute;
     }
     input#name {
         color: #353535;
@@ -14,9 +16,10 @@
         border: #eaeaea;
         font-size: 18px;
         padding: 0 0 0 10px;
-        width: 40%;
-        outline-style: none;   
-        font-family: 'Roboto';
+        text-align: center;
+        width: 150px;
+        outline-style: none;
+        font-family: "Roboto";
     }    
 }
 .recherche-block {
@@ -113,7 +116,7 @@
         background: #f5edff;
     }
 }
-section.les-restaurants {
+.les-restaurants {
     background: #f6f6f6;
     padding: 60px 20px 60px 20px;
     h2 {
@@ -186,3 +189,20 @@ section.les-restaurants {
 
 
 
+
+@media only screen and (min-width: 992px) {
+    .les-restaurant {
+        display: flex;
+        justify-content: space-between;
+    }
+    .restaurants {
+        position: relative;
+        width: 24%;
+    }
+    .les-restaurants {
+        background: #f6f6f6;
+        padding: 60px 15px 30px 15px;
+        margin: 0 50px 50px 50px;
+        border-radius: 50px;
+    }
+}

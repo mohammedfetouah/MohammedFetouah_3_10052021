@@ -44,13 +44,13 @@ header {
 }
 
 footer.footer-colonnes {
-    padding: 30px 20px 40px 20px;
+    padding: 30px 20px 60px 20px;
     background: #353535;
     color: #fff;
     .title-ohmyfoods-s {
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(107%) contrast(101%);
         .footer-svg-logo {
-            width: 30%;
+            width: 100px;
         }
     }
     a {

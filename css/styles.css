@@ -8,6 +8,20 @@
     opacity: 1;
   }
 }
+@keyframes check-rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -108,7 +122,7 @@ header .logo-ohmyfoods {
 }
 
 footer.footer-colonnes {
-  padding: 30px 20px 40px 20px;
+  padding: 30px 20px 60px 20px;
   background: #353535;
   color: #fff;
 }
@@ -116,7 +130,7 @@ footer.footer-colonnes .title-ohmyfoods-s {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(107%) contrast(101%);
 }
 footer.footer-colonnes .title-ohmyfoods-s .footer-svg-logo {
-  width: 30%;
+  width: 100px;
 }
 footer.footer-colonnes a {
   color: #fff;
@@ -140,11 +154,13 @@ footer.footer-colonnes .colonnes .colonne {
 .recherche-position {
   background: #eaeaea;
   text-align: center;
+  position: relative;
   padding: 20px 0 20px 0;
   box-shadow: inset 0px 4px 3px -1px #cfcfcf;
 }
 .recherche-position .span-icon {
   color: #353535;
+  position: absolute;
 }
 .recherche-position input#name {
   color: #353535;
@@ -152,7 +168,8 @@ footer.footer-colonnes .colonnes .colonne {
   border: #eaeaea;
   font-size: 18px;
   padding: 0 0 0 10px;
-  width: 40%;
+  text-align: center;
+  width: 150px;
   outline-style: none;
   font-family: "Roboto";
 }
@@ -260,11 +277,11 @@ footer.footer-colonnes .colonnes .colonne {
   background: #f5edff;
 }
 
-section.les-restaurants {
+.les-restaurants {
   background: #f6f6f6;
   padding: 60px 20px 60px 20px;
 }
-section.les-restaurants h2 {
+.les-restaurants h2 {
   margin-top: 0;
   font-weight: 500;
 }
@@ -336,8 +353,31 @@ section.les-restaurants h2 {
   margin-top: 15px;
 }
 
+@media only screen and (min-width: 992px) {
+  .les-restaurant {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurants {
+    position: relative;
+    width: 24%;
+  }
+
+  .les-restaurants {
+    background: #f6f6f6;
+    padding: 60px 15px 30px 15px;
+    margin: 0 50px 50px 50px;
+    border-radius: 50px;
+  }
+}
 .img-fonds {
   margin-bottom: -50px;
+}
+.img-fonds .img-fond {
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
 }
 
 .les-menu {
@@ -404,7 +444,7 @@ section.les-restaurants h2 {
 .entrees .button-entrees-descriptions .entrees-descriptions {
   width: 100%;
   text-align: initial;
-  padding: 5px 15px;
+  padding: 12px;
   box-sizing: border-box;
 }
 .entrees .button-entrees-descriptions .entree-descriptions {
@@ -413,7 +453,7 @@ section.les-restaurants h2 {
 }
 .entrees .button-entrees-descriptions .entree-descriptions p.entree-description {
   font-size: 13px;
-  margin-top: 15px;
+  margin-top: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -428,17 +468,22 @@ section.les-restaurants h2 {
   margin-right: -70px;
   overflow: hidden;
   background: #99E2D0;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .entrees .button-entrees-descriptions:hover .entrees-descriptions {
   width: calc(100% - 70px);
-  transition: width 2s;
+  transition: width 0.4s ease-out;
 }
 .entrees .button-entrees-descriptions:hover .entree-check-circle {
   margin-right: 0;
-  transition: 2s;
+  transition: 0.4s ease-out;
+}
+.entrees .button-entrees-descriptions:hover .entree-check-circle i {
+  animation: check-rotate 0.4s normal linear;
+  font-size: 27px;
 }
 
 .ApparitionProgressive1 {

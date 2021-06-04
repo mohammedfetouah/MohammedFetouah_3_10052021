@@ -8,3 +8,17 @@
         opacity:1; 
     }
 } 
+@keyframes check-rotate {
+    0%   { 
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    50% { 
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+    100% { 
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+} 
