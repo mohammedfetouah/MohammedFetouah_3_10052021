@@ -359,16 +359,43 @@ footer.footer-colonnes .colonnes .colonne {
     justify-content: space-between;
   }
 
+  .restaurant {
+    margin-top: 30px;
+  }
+
   .restaurants {
     position: relative;
     width: 24%;
   }
+  .restaurants .restaurants-new {
+    top: 43px;
+  }
+
+  ul.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  ul.nav-bar li.nav-bar-list {
+    width: 25%;
+  }
 
   .les-restaurants {
     background: #f6f6f6;
-    padding: 60px 15px 30px 15px;
-    margin: 0 50px 50px 50px;
+    padding: 50px;
     border-radius: 50px;
+    margin-top: 50px;
+    box-shadow: 3px 2px 10px #e5e5e5;
+  }
+
+  .nav {
+    margin: 0;
+  }
+
+  section.container {
+    margin: 50px 50px 50px 50px;
+  }
+  section.container h2 {
+    text-align: center;
   }
 }
 .img-fonds {
