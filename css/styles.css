@@ -151,6 +151,19 @@ footer.footer-colonnes .colonnes .colonne {
   padding-top: 15px;
 }
 
+@media only screen and (min-width: 992px) {
+  header .logo-ohmyfoods {
+    width: 30%;
+  }
+
+  footer .title-ohmyfoods-s {
+    text-align: center;
+  }
+  footer .colonnes {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .recherche-position {
   background: #eaeaea;
   text-align: center;
@@ -207,6 +220,10 @@ footer.footer-colonnes .colonnes .colonne {
   border-radius: 30px;
   color: #ffff;
   cursor: pointer;
+}
+.recherche-block .recherches-button span:hover {
+  filter: brightness(1.1);
+  transition: 0.8s;
 }
 
 .nav {
@@ -275,6 +292,7 @@ footer.footer-colonnes .colonnes .colonne {
 }
 .nav-bar-list:hover {
   background: #f5edff;
+  transition: 0.8s;
 }
 
 .les-restaurants {
@@ -311,14 +329,22 @@ footer.footer-colonnes .colonnes .colonne {
 .restaurants .restaurant-likes i {
   font-size: 30px;
 }
+.restaurants .restaurant-likes .fas {
+  display: none;
+}
 .restaurants .restaurant-likes:hover .far {
-  font-weight: 900;
+  display: none;
+}
+.restaurants .restaurant-likes:hover .fas {
   background: linear-gradient(#FF79DA, #9356DC);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  transition: 0.15s ease-in-out;
+  display: block;
+  padding: 1px;
 }
 
 .restaurant {
@@ -431,7 +457,6 @@ footer.footer-colonnes .colonnes .colonne {
   font-size: 26px;
 }
 .les-menu .les-menu-title .les-menu-likes i:hover {
-  font-weight: 900;
   background: linear-gradient(#FF79DA, #9356DC);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -546,6 +571,34 @@ footer.footer-colonnes .colonnes .colonne {
   color: #ffff;
   cursor: pointer;
   padding: 20px 50px 20px 50px;
+}
+.commander .commander-button span:hover {
+  filter: brightness(1.1);
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 992px) {
+  .les-menu .les-menu-title {
+    display: flex;
+    justify-content: center;
+  }
+  .les-menu .les-menu-title span .les-menu-likes {
+    position: static;
+    top: none;
+    right: none;
+    cursor: pointer;
+    display: none;
+    text-align: none;
+    width: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu .entrees .button-entrees-descriptions {
+    width: 310px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

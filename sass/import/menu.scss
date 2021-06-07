@@ -114,9 +114,37 @@
         span {
             @include button-gradient;
             padding: 20px 50px 20px 50px;
+            &:hover {
+                filter: brightness(1.1);
+                transition: .5s;
+            }
+            
         }
+
     }
 }
 
+@media only screen and (min-width: 992px) {
 
+    .les-menu .les-menu-title {
+        display: flex;
+        justify-content: center;
+        span .les-menu-likes  {
+            position: static;
+            top: none ;
+            right: none ;
+            cursor: pointer ;
+            display: none ;
+            text-align: none;
+            width: none;
+        }
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        .entrees .button-entrees-descriptions {
+            width: 310px;
+        }
+    }
 
+}

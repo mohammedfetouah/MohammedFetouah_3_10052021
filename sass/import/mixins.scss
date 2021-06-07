@@ -1,5 +1,4 @@
 @mixin like-gradient {
-    font-weight: 900;
     background: linear-gradient($secondaire, $primaire);
     background-size: 100%;
     -webkit-background-clip: text;

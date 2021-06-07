@@ -72,4 +72,22 @@ footer.footer-colonnes {
         }
     }
 }
+@media only screen and (min-width: 992px) {
+    header {
+        .logo-ohmyfoods {
+            width: 30%; 
+
+        } 
+    }
+    footer {
+        .title-ohmyfoods-s {
+            text-align: center;
+        }
+        .colonnes {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
 
