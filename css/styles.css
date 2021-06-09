@@ -111,6 +111,7 @@ body {
   font-family: "roboto";
 }
 
+/* DEBUT LOADER SPINNER */
 .loader {
   position: fixed;
   z-index: 10;
@@ -122,7 +123,7 @@ body {
   width: 100%;
   height: 0;
   overflow: hidden;
-  background: #fff;
+  background: #f6f6f6;
   animation: loader-animation 2.5s;
   animation-iteration-count: 1;
 }
@@ -161,6 +162,7 @@ body {
   border-radius: 50% 50% 0 0;
 }
 
+/* FIN LOADER SPINNER */
 h1 {
   font-size: 28px;
   font-weight: 100;
@@ -182,6 +184,7 @@ i {
   font-size: 23px;
 }
 
+/* DEBUT HEADER */
 header {
   position: relative;
 }
@@ -203,10 +206,8 @@ header .logo-ohmyfoods {
   width: 45%;
 }
 
-.img-fond {
-  width: 100%;
-}
-
+/* DEBUT HEADER */
+/* DEBUT FOOTER */
 footer.footer-colonnes {
   padding: 30px 20px 60px 20px;
   background: #353535;
@@ -237,6 +238,8 @@ footer.footer-colonnes .colonnes .colonne {
   padding-top: 15px;
 }
 
+/* FIN FOOTER */
+/* DEBUT RESPONSIVE TABLETTE */
 @media only screen and (min-width: 768px) {
   header .logo-ohmyfoods {
     width: 30%;
@@ -250,6 +253,8 @@ footer.footer-colonnes .colonnes .colonne {
     justify-content: space-around;
   }
 }
+/* FIN RESPONSIVE TABLETTE */
+/* DEBUT RECHERCHE */
 .recherche-position {
   background: #eaeaea;
   text-align: center;
@@ -301,7 +306,7 @@ footer.footer-colonnes .colonnes .colonne {
   padding: 20px 20px 20px 20px;
   font-size: 18px;
   display: block;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   outline-style: none;
   border-radius: 30px;
   color: #ffff;
@@ -312,6 +317,8 @@ footer.footer-colonnes .colonnes .colonne {
   transition: 0.8s;
 }
 
+/* FIN RECHERCHE */
+/* DEBUT NAV */
 .nav {
   margin: 60px 20px 60px 20px;
 }
@@ -381,6 +388,8 @@ footer.footer-colonnes .colonnes .colonne {
   transition: 0.8s;
 }
 
+/* FIN NAV */
+/* FIN RESTAURANT */
 .les-restaurants {
   background: #f6f6f6;
   padding: 60px 20px 60px 20px;
@@ -431,7 +440,7 @@ footer.footer-colonnes .colonnes .colonne {
   transition: opacity 2s;
 }
 .restaurants .restaurant-likes:hover .fas {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -478,6 +487,8 @@ footer.footer-colonnes .colonnes .colonne {
   margin-top: 15px;
 }
 
+/* FIN RESTAURANT */
+/* DEBUT RESPONSIVE TABLETTE */
 @media only screen and (min-width: 768px) {
   nav .nav {
     margin: 60px;
@@ -486,47 +497,22 @@ footer.footer-colonnes .colonnes .colonne {
   .les-restaurants {
     padding: 60px;
   }
-
-  .restaurant {
+  .les-restaurants .restaurant {
     margin-top: 40px;
   }
 }
+/* FIN RESPONSIVE TABLETTE */
+/* DEBUT RESPONSIVE  */
 @media only screen and (min-width: 992px) {
-  .les-restaurant {
-    display: flex;
-    justify-content: space-between;
+  .nav {
+    margin: 0;
   }
-
-  .restaurant {
-    margin-top: 30px;
-  }
-
-  .restaurants {
-    position: relative;
-    width: 24%;
-  }
-  .restaurants .restaurants-new {
-    top: 43px;
-  }
-
-  ul.nav-bar {
+  .nav ul.nav-bar {
     display: flex;
     justify-content: space-evenly;
   }
-  ul.nav-bar li.nav-bar-list {
+  .nav ul.nav-bar li.nav-bar-list {
     width: 25%;
-  }
-
-  .les-restaurants {
-    background: #f6f6f6;
-    padding: 50px;
-    border-radius: 50px;
-    margin-top: 50px;
-    box-shadow: 3px 2px 10px #e5e5e5;
-  }
-
-  .nav {
-    margin: 0;
   }
 
   section.container {
@@ -535,9 +521,35 @@ footer.footer-colonnes .colonnes .colonne {
   section.container h2 {
     text-align: center;
   }
+
+  .les-restaurants {
+    background: #fff;
+  }
+  .les-restaurants .les-restaurant {
+    display: flex;
+    justify-content: space-between;
+    background: #f6f6f6;
+    padding: 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+    box-shadow: 3px 2px 10px #e5e5e5;
+  }
+  .les-restaurants .les-restaurant .restaurants {
+    position: relative;
+    width: 24%;
+  }
+  .les-restaurants .les-restaurant .restaurants .restaurants-new {
+    top: 43px;
+  }
+  .les-restaurants .les-restaurant .restaurants .restaurant {
+    margin-top: 30px;
+  }
 }
+/* FIN RESPONSIVE TABLETTE */
+/* DEBUT IMG FOND */
 .img-fonds {
   margin-bottom: -50px;
+  width: 100%;
 }
 .img-fonds .img-fond {
   width: 100%;
@@ -545,6 +557,8 @@ footer.footer-colonnes .colonnes .colonne {
   object-fit: cover;
 }
 
+/* FIN IMG FOND */
+/* DEBUT MENU */
 .les-menu {
   padding: 45px 20px 60px 20px;
   background: #f6f6f6;
@@ -580,7 +594,7 @@ footer.footer-colonnes .colonnes .colonne {
   transition: opacity 2s;
 }
 .les-menu .les-menu-title .restaurant-likes:hover .fas {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -595,6 +609,8 @@ footer.footer-colonnes .colonnes .colonne {
   transition: height 2s;
 }
 
+/* FIN MENU */
+/* DEBUT ENTREE */
 .les-entrees-title .border-solid {
   border-top: 3px solid #99E2D0;
   width: 64px;
@@ -668,6 +684,8 @@ footer.footer-colonnes .colonnes .colonne {
   font-size: 27px;
 }
 
+/* FIN ENTREE */
+/* DEBUT APPARITION PROGRESSIVE ENTREE */
 .ApparitionProgressive1 {
   opacity: 0;
   animation: apparition 0.4s ease-in-out 0.1s forwards;
@@ -683,6 +701,8 @@ footer.footer-colonnes .colonnes .colonne {
   animation: apparition 0.4s ease-in-out 0.5s forwards;
 }
 
+/* FIN APPARITION PROGRESSIVE ENTREE */
+/* DEBUT BUTTON COMMANDER */
 .commander {
   text-align: center;
   margin-top: 50px;
@@ -695,7 +715,7 @@ footer.footer-colonnes .colonnes .colonne {
   padding: 20px 20px 20px 20px;
   font-size: 18px;
   display: block;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   outline-style: none;
   border-radius: 30px;
   color: #ffff;
@@ -707,6 +727,8 @@ footer.footer-colonnes .colonnes .colonne {
   transition: 0.5s;
 }
 
+/* FIN BUTTON COMMANDER */
+/* DEBUT RESPONSIVE DESKTOP */
 @media only screen and (min-width: 992px) {
   .les-menu .les-menu-title {
     display: flex;
@@ -730,5 +752,6 @@ footer.footer-colonnes .colonnes .colonne {
     width: 310px;
   }
 }
+/* FIN RESPONSIVE DESKTOP */
 
 /*# sourceMappingURL=styles.css.map */

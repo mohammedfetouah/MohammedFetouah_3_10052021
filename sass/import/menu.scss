@@ -1,13 +1,24 @@
-
-
+/* DEBUT IMG FOND */
 .img-fonds {
     margin-bottom: -50px;
+    width: 100%;
     .img-fond {
         width: 100%;
         height: 265px;
         object-fit: cover;
     }
 }
+/* FIN IMG FOND */
+
+
+
+
+
+
+
+
+
+/* DEBUT MENU */
 .les-menu {
     padding: 45px 20px 60px 20px;
     background: #f6f6f6;
@@ -45,12 +56,22 @@
                         height: 32px;
                         transition: height 2s;
                     }
-                }
-    
+                }  
             }
         }
     }
 }
+/* FIN MENU */
+
+
+
+
+
+
+
+
+
+/* DEBUT ENTREE */
 .les-entrees-title .border-solid {
     @include border-bottom;
 }
@@ -115,6 +136,17 @@
         }
     }
 }
+/* FIN ENTREE */
+
+
+
+
+
+
+
+
+
+/* DEBUT APPARITION PROGRESSIVE ENTREE */
 .ApparitionProgressive1 {
     opacity:0;
     animation: apparition .4s ease-in-out .1s forwards  ;
@@ -127,6 +159,17 @@
     opacity:0;
     animation: apparition .4s ease-in-out .5s forwards  ;
 }
+/* FIN APPARITION PROGRESSIVE ENTREE */
+
+
+
+
+
+
+
+
+
+/* DEBUT BUTTON COMMANDER */
 .commander {
     text-align: center;
     margin-top: 50px;
@@ -139,15 +182,22 @@
             &:hover {
                 filter: brightness(1.1);
                 transition: .5s;
-            }
-            
+            } 
         }
-
     }
 }
+/* FIN BUTTON COMMANDER */
 
-@media only screen and (min-width: 992px) {
 
+
+
+
+
+
+
+
+/* DEBUT RESPONSIVE DESKTOP */
+@media #{$desktop} {
     .les-menu .les-menu-title {
         display: flex;
         justify-content: center;
@@ -168,5 +218,5 @@
             width: 310px;
         }
     }
-
 }
+/* FIN RESPONSIVE DESKTOP */

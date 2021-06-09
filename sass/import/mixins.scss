@@ -1,5 +1,5 @@
 @mixin like-gradient {
-    background: linear-gradient($secondaire, $primaire);
+    background: linear-gradient($primaire, $secondaire);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -19,7 +19,7 @@
     padding: 20px 20px 20px 20px;
     font-size: 18px;
     display: block;
-    background: linear-gradient($secondaire, $primaire);
+    background: linear-gradient($primaire, $secondaire);
     outline-style: none;
     border-radius: 30px;
     color: #ffff;
