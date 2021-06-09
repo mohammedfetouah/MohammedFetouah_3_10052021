@@ -149,23 +149,38 @@
         bottom: 40px;
         right: 30px; 
         font-weight: 100;
+        width: 32px;
+        height: 32px;
         i {
             font-size: 30px ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
         }
         .fas {
-            display: none;
+            &:before {
+                overflow: hidden;
+                height: 0;
+                display: block;
+            }
         }
-
         &:hover {
             .far {
-                display: none;
+                opacity: 0;
+                transition: opacity 2s;
             }
             .fas {
                 @include like-gradient;
                 transition:  .15s ease-in-out;
                 display: block;
                 padding: 1px;
+                &:before {
+                    height: 32px;
+                    transition: height 2s;
+                }
             }
+
         }
     }
 }
@@ -198,14 +213,23 @@
         font-size: 18px;
         margin-top: 15px;
     }
-
+}
+@media #{$tablette} {
+    nav .nav {
+        margin: 60px;
+    }
+    .les-restaurants {
+        padding: 60px;
+    }
+    .restaurant {
+        margin-top: 40px;
+    }
 }
 
 
 
 
-
-@media only screen and (min-width: 992px) {
+@media #{$desktop} {
     .les-restaurant {
         display: flex;
         justify-content: space-between;
@@ -221,7 +245,6 @@
             top: 43px;
         }
     }
-
     ul.nav-bar {
         display: flex;
         justify-content: space-evenly;
@@ -240,7 +263,7 @@
         margin: 0;
     }
     section.container {
-        margin: 50px 50px 50px 50px;
+        margin: 50px;
         h2 {
             text-align: center;
         }

@@ -1,24 +1,61 @@
 @keyframes apparition {
-    0%   { 
-        transform: translateY(5px);
-        opacity:0; 
-    }
-    100% { 
-        transform: translateY(0px);
-        opacity:1; 
-    }
+  0%   { 
+    transform: translateY(5px);
+    opacity:0; 
+  }
+  100% { 
+    transform: translateY(0px);
+    opacity:1; 
+  }
 } 
 @keyframes check-rotate {
-    0%   { 
-        -webkit-transform: rotate3d(0, 0, 1, 0deg);
-        transform: rotate3d(0, 0, 1, 0deg);
-    }
-    50% { 
-        -webkit-transform: rotate3d(0, 0, 1, 360deg);
-        transform: rotate3d(0, 0, 1, 180deg);
-    }
-    100% { 
-        -webkit-transform: rotate3d(0, 0, 1, 360deg);
-        transform: rotate3d(0, 0, 1, 360deg);
-    }
+  0%   { 
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  50% { 
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  100% { 
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
 } 
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes loader-animation {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  70% {
+    opacity: 1;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}

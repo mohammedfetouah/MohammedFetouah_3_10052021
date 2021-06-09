@@ -22,6 +22,42 @@
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes loader-animation {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  70% {
+    opacity: 1;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,6 +109,56 @@ table {
 
 body {
   font-family: "roboto";
+}
+
+.loader {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: #fff;
+  animation: loader-animation 2.5s;
+  animation-iteration-count: 1;
+}
+.loader .lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.loader .lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #9356DC;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.loader .lds-heart div:after,
+.loader .lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #9356DC;
+}
+.loader .lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.loader .lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
 }
 
 h1 {
@@ -151,7 +237,7 @@ footer.footer-colonnes .colonnes .colonne {
   padding-top: 15px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   header .logo-ohmyfoods {
     width: 30%;
   }
@@ -325,15 +411,24 @@ footer.footer-colonnes .colonnes .colonne {
   bottom: 40px;
   right: 30px;
   font-weight: 100;
+  width: 32px;
+  height: 32px;
 }
 .restaurants .restaurant-likes i {
   font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
-.restaurants .restaurant-likes .fas {
-  display: none;
+.restaurants .restaurant-likes .fas:before {
+  overflow: hidden;
+  height: 0;
+  display: block;
 }
 .restaurants .restaurant-likes:hover .far {
-  display: none;
+  opacity: 0;
+  transition: opacity 2s;
 }
 .restaurants .restaurant-likes:hover .fas {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -345,6 +440,10 @@ footer.footer-colonnes .colonnes .colonne {
   transition: 0.15s ease-in-out;
   display: block;
   padding: 1px;
+}
+.restaurants .restaurant-likes:hover .fas:before {
+  height: 32px;
+  transition: height 2s;
 }
 
 .restaurant {
@@ -379,6 +478,19 @@ footer.footer-colonnes .colonnes .colonne {
   margin-top: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  nav .nav {
+    margin: 60px;
+  }
+
+  .les-restaurants {
+    padding: 60px;
+  }
+
+  .restaurant {
+    margin-top: 40px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .les-restaurant {
     display: flex;
@@ -418,7 +530,7 @@ footer.footer-colonnes .colonnes .colonne {
   }
 
   section.container {
-    margin: 50px 50px 50px 50px;
+    margin: 50px;
   }
   section.container h2 {
     text-align: center;
@@ -442,7 +554,7 @@ footer.footer-colonnes .colonnes .colonne {
 .les-menu .les-menu-title {
   position: relative;
 }
-.les-menu .les-menu-title .les-menu-likes {
+.les-menu .les-menu-title .restaurant-likes {
   position: absolute;
   top: 1px;
   right: 0px;
@@ -451,18 +563,36 @@ footer.footer-colonnes .colonnes .colonne {
   text-align: center;
   width: 30px;
 }
-.les-menu .les-menu-title .les-menu-likes i {
-  display: block;
-  width: 30px;
-  font-size: 26px;
+.les-menu .les-menu-title .restaurant-likes i {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
-.les-menu .les-menu-title .les-menu-likes i:hover {
+.les-menu .les-menu-title .restaurant-likes .fas:before {
+  overflow: hidden;
+  height: 0;
+  display: block;
+}
+.les-menu .les-menu-title .restaurant-likes:hover .far {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.les-menu .les-menu-title .restaurant-likes:hover .fas {
   background: linear-gradient(#FF79DA, #9356DC);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  transition: 0.15s ease-in-out;
+  display: block;
+  padding: 1px;
+}
+.les-menu .les-menu-title .restaurant-likes:hover .fas:before {
+  height: 32px;
+  transition: height 2s;
 }
 
 .les-entrees-title .border-solid {

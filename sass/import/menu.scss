@@ -13,18 +13,40 @@
     background: #f6f6f6;
     overflow: overlay;
     border-radius: 50px 50px 0 0;
-    .les-menu-title {
+    .les-menu-title { 
         position: relative;
-        .les-menu-likes {
+        .restaurant-likes  {
             @include menu-likes;
             i {
-                display: block;
-                width: 30px;
-                font-size: 26px;
-                &:hover {
-                    @include like-gradient;  
-                              
+                font-size: 30px ;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+            }
+            .fas {
+                &:before {
+                    overflow: hidden;
+                    height: 0;
+                    display: block;
                 }
+            }
+            &:hover {
+                .far {
+                    opacity: 0;
+                    transition: opacity 2s;
+                }
+                .fas {
+                    @include like-gradient;
+                    transition:  .15s ease-in-out;
+                    display: block;
+                    padding: 1px;
+                    &:before {
+                        height: 32px;
+                        transition: height 2s;
+                    }
+                }
+    
             }
         }
     }
