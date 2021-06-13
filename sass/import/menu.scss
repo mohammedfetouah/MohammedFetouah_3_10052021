@@ -19,10 +19,14 @@
 
 
 /* DEBUT MENU */
+main {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
 .les-menu {
     padding: 45px 20px 60px 20px;
     background: #f6f6f6;
-    overflow: overlay;
     border-radius: 50px 50px 0 0;
     .les-menu-title { 
         position: relative;
@@ -196,27 +200,53 @@
 
 
 
+/* DEBUT RESPONSIVE TABLETTE */
+@media #{$tablette} {
+    main {
+        margin-bottom: 50px;
+        .img-fonds .img-fond {
+            border-radius: 50px 50px 0px 0px;
+        }
+        .les-menu {
+            border-radius: 50px;
+        }
+    }
+}
+/* DEBUT RESPONSIVE TABLETTE */
+
+
+
+
+
+
+
+
+
 /* DEBUT RESPONSIVE DESKTOP */
 @media #{$desktop} {
-    .les-menu .les-menu-title {
-        display: flex;
-        justify-content: center;
-        span .les-menu-likes  {
-            position: static;
-            top: none ;
-            right: none ;
-            cursor: pointer ;
-            display: none ;
-            text-align: none;
-            width: none;
+    main {
+
+        .les-menu .les-menu-title {
+            display: flex;
+            justify-content: center;
+            span .les-menu-likes  {
+                position: static;
+                top: none ;
+                right: none ;
+                cursor: pointer ;
+                display: none ;
+                text-align: none;
+                width: none;
+            }
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            .entrees .button-entrees-descriptions {
+                width: 310px;
+            }
         }
     }
-    .menu {
-        display: flex;
-        justify-content: space-around;
-        .entrees .button-entrees-descriptions {
-            width: 310px;
-        }
-    }
+
 }
 /* FIN RESPONSIVE DESKTOP */

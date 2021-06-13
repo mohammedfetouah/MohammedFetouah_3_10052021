@@ -245,6 +245,10 @@ footer.footer-colonnes .colonnes .colonne {
     width: 30%;
   }
 
+  footer.footer-colonnes {
+    border-radius: 30px 30px 0 0;
+  }
+
   footer .title-ohmyfoods-s {
     text-align: center;
   }
@@ -254,6 +258,15 @@ footer.footer-colonnes .colonnes .colonne {
   }
 }
 /* FIN RESPONSIVE TABLETTE */
+/* FIN RESPONSIVE DESKTOP */
+@media only screen and (min-width: 1200px) {
+  footer.footer-colonnes {
+    margin-left: -50px;
+    margin-right: -50px;
+    border-radius: 0;
+  }
+}
+/* FIN RESPONSIVE DESKTOP */
 /* DEBUT RECHERCHE */
 .recherche-position {
   background: #eaeaea;
@@ -490,12 +503,27 @@ footer.footer-colonnes .colonnes .colonne {
 /* FIN RESTAURANT */
 /* DEBUT RESPONSIVE TABLETTE */
 @media only screen and (min-width: 768px) {
+  body {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .recherche-block {
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .recherche-position {
+    border-radius: 20px 20px 0px 0px;
+  }
+
   nav .nav {
     margin: 60px;
   }
 
   .les-restaurants {
     padding: 60px;
+    margin-bottom: 50px;
+    border-radius: 30px;
   }
   .les-restaurants .restaurant {
     margin-top: 40px;
@@ -503,7 +531,12 @@ footer.footer-colonnes .colonnes .colonne {
 }
 /* FIN RESPONSIVE TABLETTE */
 /* DEBUT RESPONSIVE  */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
+  body {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .nav {
     margin: 0;
   }
@@ -516,7 +549,7 @@ footer.footer-colonnes .colonnes .colonne {
   }
 
   section.container {
-    margin: 50px;
+    margin: 50px 0 0 0;
   }
   section.container h2 {
     text-align: center;
@@ -524,6 +557,7 @@ footer.footer-colonnes .colonnes .colonne {
 
   .les-restaurants {
     background: #fff;
+    padding: 50px 0px 0px 0px;
   }
   .les-restaurants .les-restaurant {
     display: flex;
@@ -559,10 +593,15 @@ footer.footer-colonnes .colonnes .colonne {
 
 /* FIN IMG FOND */
 /* DEBUT MENU */
+main {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
 .les-menu {
   padding: 45px 20px 60px 20px;
   background: #f6f6f6;
-  overflow: overlay;
   border-radius: 50px 50px 0 0;
 }
 .les-menu .les-menu-title {
@@ -728,13 +767,26 @@ footer.footer-colonnes .colonnes .colonne {
 }
 
 /* FIN BUTTON COMMANDER */
+/* DEBUT RESPONSIVE TABLETTE */
+@media only screen and (min-width: 768px) {
+  main {
+    margin-bottom: 50px;
+  }
+  main .img-fonds .img-fond {
+    border-radius: 50px 50px 0px 0px;
+  }
+  main .les-menu {
+    border-radius: 50px;
+  }
+}
+/* DEBUT RESPONSIVE TABLETTE */
 /* DEBUT RESPONSIVE DESKTOP */
-@media only screen and (min-width: 992px) {
-  .les-menu .les-menu-title {
+@media only screen and (min-width: 1200px) {
+  main .les-menu .les-menu-title {
     display: flex;
     justify-content: center;
   }
-  .les-menu .les-menu-title span .les-menu-likes {
+  main .les-menu .les-menu-title span .les-menu-likes {
     position: static;
     top: none;
     right: none;
@@ -743,12 +795,11 @@ footer.footer-colonnes .colonnes .colonne {
     text-align: none;
     width: none;
   }
-
-  .menu {
+  main .menu {
     display: flex;
     justify-content: space-around;
   }
-  .menu .entrees .button-entrees-descriptions {
+  main .menu .entrees .button-entrees-descriptions {
     width: 310px;
   }
 }
