@@ -230,13 +230,7 @@ main {
             display: flex;
             justify-content: center;
             span .les-menu-likes  {
-                position: static;
-                top: none ;
-                right: none ;
-                cursor: pointer ;
                 display: none ;
-                text-align: none;
-                width: none;
             }
         }
         .menu {

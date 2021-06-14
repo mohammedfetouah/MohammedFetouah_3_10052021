@@ -789,13 +789,7 @@ main {
     justify-content: center;
   }
   main .les-menu .les-menu-title span .les-menu-likes {
-    position: static;
-    top: none;
-    right: none;
-    cursor: pointer;
     display: none;
-    text-align: none;
-    width: none;
   }
   main .menu {
     display: flex;
