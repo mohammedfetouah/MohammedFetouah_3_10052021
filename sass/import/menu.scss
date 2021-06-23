@@ -20,7 +20,6 @@
 
 /* DEBUT MENU */
 main {
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -76,8 +75,14 @@ main {
 
 
 /* DEBUT ENTREE */
-.les-entrees-title .border-solid {
-    @include border-bottom;
+.les-entrees-title {
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.1em;
+    }
+    .border-solid {
+        @include border-bottom;
+    }
 }
 .entrees {
     .button-entrees-descriptions {  
